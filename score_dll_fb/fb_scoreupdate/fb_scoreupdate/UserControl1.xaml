@@ -1,0 +1,64 @@
+﻿<UserControl Name="APP" x:Class="fb_scoreupdate.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:fb_scoreupdate"
+             mc:Ignorable="d" 
+             Width="1920" Height="1080" FontSize="72">
+    <Canvas HorizontalAlignment="Left" Height="323.699" Margin="1582.809,711.075,0,0" VerticalAlignment="Top" Width="299.339" Background="White">
+        <Rectangle Name="Team1_Rect" Fill="#FF2C6DAE" Height="137.999" Width="299.339" Canvas.Top="0.136"/>
+        <Rectangle x:Name="Team2_Rect" Fill="#FFAE2C2C" Height="137.999" Width="299.339" Canvas.Top="137.863"/>
+        <Rectangle x:Name="Team1_Rect_TitleBar" Fill="#FF2C6DAE" Height="34.998" Width="299.339" Canvas.Top="0.001">
+            <Rectangle.Effect>
+                <DropShadowEffect ShadowDepth="0"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Label Name="Team1_Name" Content="TEAM 1" Height="35" Width="225" Foreground="White" FontSize="20" FontWeight="Bold" Canvas.Left="10.167" VerticalContentAlignment="Center" Padding="0"/>
+        <Label Name="Team1_Score" Content="0" Canvas.Left="40" Canvas.Top="35" Height="88.136" HorizontalContentAlignment="Center" Padding="0" Foreground="White"/>
+        <Label Name="Team1_Record" Content="0 - 0" Height="35" Width="85.851" Foreground="White" VerticalContentAlignment="Center" FontSize="20" FontWeight="Bold" Canvas.Left="204" HorizontalContentAlignment="Right" Padding="0"/>
+        <Rectangle x:Name="Team2_Rect_TitleBar" Fill="#FFAE2C2C" Height="34.998" Width="299.339" Canvas.Top="138.136">
+            <Rectangle.Effect>
+                <DropShadowEffect ShadowDepth="0"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Label Name="Team2_Name" Content="TEAM 2" Height="35" Width="208" Foreground="White" VerticalContentAlignment="Center" FontSize="20" FontWeight="Bold" Canvas.Left="10" Canvas.Top="138" Padding="0"/>
+        <Label Name="Team2_Record" Content="0 - 0" Height="35" Width="85.925" Foreground="White" VerticalContentAlignment="Center" FontSize="20" FontWeight="Bold" Canvas.Left="204" HorizontalContentAlignment="Right" Canvas.Top="138" Padding="0"/>
+        <Label Name="Team2_Score" Content="0" Canvas.Left="40" Canvas.Top="173" Height="88.136" HorizontalContentAlignment="Center" Padding="0" Foreground="White"/>
+        <Rectangle Name="Team1Timeout3" Fill="White" Height="4.5" Canvas.Left="10" Canvas.Top="40" Width="41.5"/>
+        <Rectangle Name="Team1Timeout2" Fill="White" Height="4.5" Canvas.Left="56.75" Canvas.Top="40" Width="41.5"/>
+        <Rectangle Name="Team1Timeout1" Fill="White" Height="4.5" Canvas.Left="103.75" Canvas.Top="40" Width="41.5"/>
+        <Rectangle Name="Team2Timeout3" Fill="White" Height="4.5" Canvas.Left="10.25" Canvas.Top="177.999" Width="41.5"/>
+        <Rectangle Name="Team2Timeout2" Fill="White" Height="4.5" Canvas.Left="57.25" Canvas.Top="177.999" Width="41.5"/>
+        <Rectangle Name="Team2Timeout1" Fill="White" Height="4.5" Canvas.Left="104.25" Canvas.Top="177.999" Width="41.5"/>
+        <Rectangle Fill="White" Height="47.699" Canvas.Top="275.999" Width="100" Stroke="#FF343434"/>
+        <Rectangle Fill="White" Height="47.7" Canvas.Top="276.15" Width="100" Stroke="#FF343434" Canvas.Left="199.339"/>
+        <Rectangle Fill="White" Height="47.7" Canvas.Top="276.15" Width="99" Stroke="#FF343434" Canvas.Left="100"/>
+        <Label Name="Quarter" Content="1st" Canvas.Top="276" Height="47.699" Width="98.75" FontSize="24" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="0" FontWeight="Medium"/>
+        <Label Name="Timer" Content="8:00" Canvas.Top="276.15" Height="47.7" Width="99" FontSize="24" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Canvas.Left="100" Padding="0" FontWeight="Medium"/>
+        <Label Name="Stats" Content="1st &amp; 10" Canvas.Top="276.15" Height="47.7" Width="99" FontSize="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Canvas.Left="200.339" Padding="0" FontWeight="Medium"/>
+        <Image Name="Team1_Icon" Height="84.136" Canvas.Left="202" Canvas.Top="44" Width="84.136"/>
+        <Image x:Name="Team2_Icon" Height="84.136" Canvas.Left="202" Canvas.Top="183" Width="84.136"/>
+        <Label Name="AnnouncementBox" Content="HALFTIME" Canvas.Top="261.136" Background="White" BorderBrush="Black" Height="62.864" Width="299.339" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30" BorderThickness="2" FontWeight="Bold"/>
+        <Label Name="Team1_Pos" Content="▲" Canvas.Left="10" Canvas.Top="71" FontSize="20" RenderTransformOrigin="0.5,0.5" Foreground="White">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="Team2_Pos" Content="▲" Canvas.Left="10" Canvas.Top="206" FontSize="20" RenderTransformOrigin="0.5,0.5" Foreground="White">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+    </Canvas>
+</UserControl>
