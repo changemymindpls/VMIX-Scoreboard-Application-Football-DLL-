@@ -1,1 +1,1 @@
-# VMIX-Scoreboard-Application-Football-DLL-
+# VMIX Scoreboard Application Football (DLL)
